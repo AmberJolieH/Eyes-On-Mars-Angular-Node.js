@@ -1,4 +1,10 @@
-# EyesOnMars
+![EYES ON MARS PROJECT](https://user-images.githubusercontent.com/67670488/119416714-e3197480-bcb9-11eb-9dfa-12306231c5a7.png)
+
+# EYES ON MARS
+
+## Eyes On Mars is a web app that calls on the Mars Rover Photo API using a given date as an input and retrieves that cooresponding photo. Users are able to download and store photos locally. This project uses Angular 10 in the front end and Node.js in the backend. 
+
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
