@@ -1,1 +1,31 @@
-<p>form works!</p>
+<h1> Form Header</h1>
+
+<form>
+    <div class="form-group">
+        <label for="camera">Date</label>
+        <inut type=date #roverDate>
+    </div>
+    <div>
+        <label></label>
+        <select>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+            <option></option>
+        </select>
+    </div>
+    <button></button>
+</form>
+
+<div>
+    <app-photos [childPhotos]="photos"><</app-photos>
+</div>
+
+<div *ngIf="photos">
+    <app-photos [childPhotos="photos"></app-photos>]
+</div>
+
+<div *ngIf="noPhotos">
+    <h3>Sorry! There are no photos taken on {{roverDate.value}} by the {{roverCamera.value}} camera.</h3>
+</div>
