@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {marsRoverKey} from '.api-keys';
+import {marsRoverKey} from './api-keys';
 @Injectable({
   providedIn: 'root'
 })
