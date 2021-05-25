@@ -11,7 +11,7 @@ app.use('/api', api);
 
 //catch all other routes --> returns to index in dist
 app.get('*', (req,res)=>{
-res.sendFile(path.join(__dirname, 'dist/index.html')) 
+res.sendFile(path.join(__dirname, 'dist/eyes-on-mars/index.html')) 
 })
 
 // dynamic to either use static port or production port 
