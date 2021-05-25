@@ -2,7 +2,7 @@
 
 # EYES ON MARS
 
-## Eyes On Mars is a web app that calls on the Mars Rover Photo API using a given date as an input and retrieves that cooresponding photo. Users are able to download and store photos locally. This project uses Angular 10 in the front end and Node.js in the backend. 
+## Eyes On Mars is a web app that calls on the Mars Rover Photo API using a given date as an input and retrieves that cooresponding photo. Users are able to download and store photos locally.  
 
 
 
