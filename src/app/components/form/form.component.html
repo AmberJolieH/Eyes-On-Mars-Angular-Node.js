@@ -15,14 +15,14 @@
             <option value="MAHLI">Mars Hand Lens Imager</option>
         </select>
     </div>
-    <button></button>
+    <button (click)="getRoverImages(roverDate.value, roverCamera.value">Get Photos</button>
 </form>
 
-<div>
+<div *ngIf="photos">
     <app-photos [childPhotos]="photos"><</app-photos>
 </div>
 
-<div *ngIf="photos">
+<div *ngIf="photos && !noPhotos">
     <app-photos [childPhotos="photos"></app-photos>]
 </div>
 
