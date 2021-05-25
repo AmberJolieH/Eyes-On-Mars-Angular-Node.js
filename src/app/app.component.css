@@ -1,7 +1,16 @@
-body { background-color: black !important; }
+body { background-color: black !important; 
+}
 
 h1{
     color:  orange;
     background-color: black
 }
 
+.navbar-logo-img{
+    width: 10%;
+    height: 10%;
+}
+
+.container{
+    background-image: url(https://collabherative.s3.us-east-2.amazonaws.com/jonny-gios-bxDJ12Kv9Rk-unsplash.jpg);
+}
