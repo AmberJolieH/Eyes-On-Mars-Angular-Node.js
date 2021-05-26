@@ -1,19 +1,24 @@
 <div class="form">
-<h1> Form Header</h1>
+<h1> Enter a date to view Mars: </h1>
+<h2>Date Input (YYYY-MM-DD)</h2>
     <div class="form-group">
-        <label for="camera">Date</label>
+        <label class="dateInput" for="camera">Date: </label>
         <input type="text" #roverDate>
     </div>
     <div>
-        <label for="camera">Camera</label>
+        <label for="camera">Rover: </label>
         <select #roverCamera>
             <option value="curiosity">Curiosity</option>
             <option value="opportunity">Opportunity</option>
             <option value="spirit">Spirit</option>
         </select>
     </div>
-    <button (click)="getRoverImages(roverDate.value, roverCamera.value)">Get Photos</button>
+    <button class="button" (click)="getRoverImages(roverDate.value, roverCamera.value)">Get Photos</button>
     
+    <h4> Please keep in mind most rovers did not start taking photos until several days after landing.</h4>
+        <p>Curiosity landed on: 2012-08-06</p>
+        <p>Opportunity landed on: 2004-01-25</p>
+        <p>Spirit landed on: 2004-01-04</p>
     
     <div *ngIf="photos">
         <app-photos [childPhotos]="photos"></app-photos>
