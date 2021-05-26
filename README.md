@@ -2,7 +2,7 @@
 
 # EYES ON MARS
 
-## Eyes On Mars is a web app that calls on the Mars Rover Photo API using a given date as an input and retrieves that cooresponding photo. Users are able to download and store photos locally.  
+## Eyes On Mars is a web app that calls on the Mars Rover Photo API using a given date as an input and retrieves that cooresponding photo.
 
 Mars Rover API: https://api.nasa.gov
 
