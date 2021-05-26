@@ -10,7 +10,7 @@ const api = require('./server/routes/api');
 //use middleware
 app.use(express.json());
 
-app.use(express.static(path.join(__dirname, 'dist'))); 
+app.use(express.static(path.join(__dirname, 'dist/eyes-on-mars/'))); 
 app.use('/api', api);
 
 //catch all other routes --> returns to index in dist
