@@ -1,4 +1,4 @@
-/* img{
+img{
     height: 500px;
     width: 500px;
     padding: 1em;
@@ -7,4 +7,4 @@
 
 .photo{
     object-fit: cover;
-} */
+}

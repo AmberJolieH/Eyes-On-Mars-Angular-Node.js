@@ -1,17 +1,17 @@
-// import { Component, Input } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
-// @Component({
-//   selector: 'app-photos',
-//   templateUrl: './photos.component.html',
-//   styleUrls: ['./photos.component.css'],
-//   providers: []
-// })
-// export class PhotosComponent {
-//   @Input() childPhotos;
+@Component({
+  selector: 'app-photos',
+  templateUrl: './photos.component.html',
+  styleUrls: ['./photos.component.css'],
+  providers: []
+})
+export class PhotosComponent {
+  @Input() childPhotos;
 
-//   constructor() { }
+  constructor() { }
 
-//   ngOnInit(){
-//   }
+  ngOnInit(){
+  }
 
-// }
+}
