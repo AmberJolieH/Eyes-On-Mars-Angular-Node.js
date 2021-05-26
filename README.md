@@ -4,7 +4,7 @@
 
 ## Eyes On Mars is a web app that calls on the Mars Rover Photo API using a given date as an input and retrieves that cooresponding photo. Users are able to download and store photos locally.  
 
-
+Mars Rover API: https://api.nasa.gov
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
@@ -14,7 +14,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Production Server(Express)
 
-Run Nodemon server.js
+Run Nodemon server.js Navigate to `http://localhost:4600/`
 
 ## Code scaffolding
 
