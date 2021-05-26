@@ -7,7 +7,7 @@ import { Component, Input } from '@angular/core';
   providers: []
 })
 export class PhotosComponent {
-  @Input() childPhotos;
+  @Input() childPhotos?: any
 
   constructor() { }
 

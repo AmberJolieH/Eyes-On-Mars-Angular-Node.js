@@ -1,5 +1,6 @@
 <h1>Eyes on Mars:</h1>
 <h2>From {{childPhotos.photos[0].earth_date}} by the {{childPhotos.photos[0].camera.name}}</h2>
-<div *ngfor="let photo of childPhotos.photos"> class="photo"
+<!-- <div *ngFor="let photo of childPhotos.photos"> class="photo"
     <img src= "{{photo.img_src}}"/>
-</div>
+</div> -->
+<img src="{{childPhotos.photos[0].img_src}}">

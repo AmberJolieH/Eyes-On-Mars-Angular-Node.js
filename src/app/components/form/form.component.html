@@ -1,11 +1,33 @@
+<div class="form">
 <h1> Form Header</h1>
-
-<form>
     <div class="form-group">
         <label for="camera">Date</label>
-        <inut type=date #roverDate>
+        <input type="text" #roverDate>
     </div>
     <div>
+        <label for="camera">Camera</label>
+        <select #roverCamera>
+            <option value="curiosity">Curiosity</option>
+            <option value="opportunity">Opportunity</option>
+            <option value="spirit">Spirit</option>
+        </select>
+    </div>
+    <button (click)="getRoverImages(roverDate.value, roverCamera.value)">Get Photos</button>
+    
+    
+    <div *ngIf="photos">
+        <app-photos [childPhotos]="photos"></app-photos>
+    </div>
+    
+    <!-- <div *ngIf="photos && !noPhotos">
+        <app-photos [childPhotos]="photos"></app-photos>
+    </div> -->
+    
+    <div *ngIf="noPhotos">
+        <h3>Sorry! There are no photos taken on {{roverDate.value}} by the {{roverCamera.value}} camera.</h3>
+    </div>
+    </div>
+<!-- <div>
         <label for="camera">Camera</label>
         <select #roverCamera>
             <option value="FHAZ">Front Hazard Avoidance Camera</option>
@@ -14,18 +36,4 @@
             <option value="CHEMCAM">Chemistry and Camera Complex</option>
             <option value="MAHLI">Mars Hand Lens Imager</option>
         </select>
-    </div>
-    <button (click)="getRoverImages(roverDate.value, roverCamera.value">Get Photos</button>
-</form>
-
-<div *ngIf="photos">
-    <app-photos [childPhotos]="photos"></app-photos>
-</div>
-
-<div *ngIf="photos && !noPhotos">
-    <app-photos [childPhotos="photos"></app-photos>]
-</div>
-
-<div *ngIf="noPhotos">
-    <h3>Sorry! There are no photos taken on {{roverDate.value}} by the {{roverCamera.value}} camera.</h3>
-</div>
+    </div> -->

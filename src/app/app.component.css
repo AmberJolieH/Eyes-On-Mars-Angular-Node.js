@@ -13,6 +13,7 @@ h1{
 
 .container{
     background-image: url(https://collabherative.s3.us-east-2.amazonaws.com/jonny-gios-bxDJ12Kv9Rk-unsplash.jpg);
+    height: 100vh;
 }
 
 .card{
