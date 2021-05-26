@@ -6,15 +6,8 @@
     margin-top: 20px;
     margin-left: 400px;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
     
-}
-
-.container{
-    /* background-image: url(https://collabherative.s3.us-east-2.amazonaws.com/jonny-gios-bxDJ12Kv9Rk-unsplash.jpg); */
-    height: 600vh;
-  
 }
 
 .card{

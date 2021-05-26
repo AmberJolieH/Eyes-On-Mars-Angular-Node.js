@@ -5,10 +5,9 @@ const APIKEY = process.env.APIKEY;
 
 //for http requests
 const axios = require('axios');
-const PostAPI = 'https://api.nasa.gov/mars-photos/api/v1/rovers'
+const PhotosAPI = 'https://api.nasa.gov/mars-photos/api/v1/rovers'
 
 
-// GET POST
 router.post('/', (req, res)=>{
     console.log('hi');
     const {rover, date} = req.body
@@ -16,13 +15,9 @@ router.post('/', (req, res)=>{
     const month = dateString.getMonth() + 1
     const day = dateString.getDate()
     const year = dateString.getFullYear()
-    axios.get(`${PostAPI}/${rover}/photos?earth_date=${year}-${month}-${day}&api_key=${APIKEY}`).then(posts=>{
-        console.log(posts.data);
-
-        res.json(posts.data);
+    axios.get(`${PhotosAPI}/${rover}/photos?earth_date=${year}-${month}-${day}&api_key=${APIKEY}`).then(posts=>{
+      res.json(photos.data);
     }).catch((error) => {console.log(error)})
-
-    // console.log('test running');
 });
 
 module.exports = router;

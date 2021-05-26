@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { RoverApiService } from 'src/app/rover-api.service';
-// import {RoverApiService} from '../rover-api.service'
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -8,8 +8,7 @@ import { RoverApiService } from 'src/app/rover-api.service';
   providers: [RoverApiService]
 })
 export class FormComponent {
-  // @Input() date:string;
-  // @Input() rover:string;
+
   
   photos: any = null;
   noPhotos: boolean = false;
@@ -21,13 +20,7 @@ export class FormComponent {
    this.noPhotos = false;
    this.roverApiService.getphotoByDateAndCamera(date, camera).subscribe(response => {
     this.photos=response
-    //  if(response.photos.length > 0)
-    //  {
-    //    this.photos = response;
-    //  }
-    //  else {
-    //    this.noPhotos = true;
-    //  }
+
    });
  }
 }
